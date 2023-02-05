@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+	        padding: 0px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #191718;
+        }
+
+        .sidebar-item {
+            width: 150px;
+            border-bottom: 1px solid #5C5C5C;
+        }
+
+        .sidebar-item :hover {
+            display: block;
+            background-color: #5C5C5C;
+            color: #FFFFFF;
+        }
+
+        a {
+            text-decoration: none;
+            color: #AAAAAA;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 40px;
+            padding-left: 20px;
+        }
+
+        .content {
+            display: block;
+            text-align: center;
+        }
+
+        .container {
+            display: block;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .firstArticle {
+            margin-left: 25px;
+            margin-right: 25px;
+            background-color: #EFEFEF;
+            padding: 10px 80px 10px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .secondArticle {
+            display: block;
+            text-align: left;
+            margin-left: 25px;
+            width: 340px;
+        }
+
+        .content-article {
+            display: flex;
+            text-align: center;
+        }
+
+        .content-secondArticle {
+            display: inline-flex;
+        }
+
+        .content-secondArticle img{
+            width: 120px;
+            height: 120px;
+        }
+        
+        footer {
+            border-top: 1px solid #DEDEDE;
+        }
+
+        footer p {
+            position: absolute;
+            display: flex; 
+            padding-bottom: 15px;
+            align-items: center;
+            margin-left: 80px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #3E3E3E;
+        }
+
+        @media screen and (max-width: 600px) {
+            .content-article {
+                display: block;
+            }
+            .secondArticle {
+                display: block;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-item"><a href="#">Home</a></div>
+        <div class="sidebar-item"><a href="#">Services</a></div>
+        <div class="sidebar-item"><a href="#">News</a></div>
+        <div class="sidebar-item"><a href="#">Blog</a></div>
+        <div class="sidebar-item"><a href="#">Contact</a></div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <img class="logo" src="icon/logoNCC 1.png">
+            <div>
+                <article class="firstArticle">
+                    <h2>Lorem ipsum dolor sit asmet?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat. Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis, ligula in mattis sodales, augue justo tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque suscipit maximus vestibulum. Phasellus congue mollis orci, sit amet luctus augue tristique eu. Donec vulputate odio neque, sed semper turpis pellentesque a.</p>
+                </article>
+                <div class="content-article">
+                    <article class="secondArticle">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <div class="content-secondArticle">
+                            <img src="icon/css-icon 1.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>
+                    </article>
+                    <article class="secondArticle">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <div class="content-secondArticle">
+                            <img src="icon/html-icon 1.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>    
+                    </article>
+                    <article class="secondArticle">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <div class="content-secondArticle">
+                            <img src="icon/url-icon 1.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>    
+                    </article>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © 2021</p>
+        </footer>
+    </div>
+</body>
+</html>
